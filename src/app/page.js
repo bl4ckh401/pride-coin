@@ -4,6 +4,9 @@ import Link from 'next/link';
 import {FaEthereum, FaHandHoldingUsd, FaPaw, FaWallet} from 'react-icons/fa'
 import {SiHiveBlockchain} from 'react-icons/si'
 import {TbDog} from 'react-icons/tb'
+import { IoIosCar, IoIosPeople, IoIosWifi } from 'react-icons/io'
+import { MdRoomService } from 'react-icons/md'
+import { CgScreen } from 'react-icons/cg'
 
 export default function Home() {
 
@@ -27,12 +30,22 @@ export default function Home() {
                     
             <div className="mt-8">
               <div className="flex flex-wrap items-center justify-center md:justify-start">
-                <Image src='/twitterIcon.webp' width={60} height={60} alt='twitter'/>
-                <Image src='/telegramIcon.webp' width={60} height={60} alt='telegram'/>
-                <Image src='/dexTool.webp' width={60} height={60} alt='dexTool'/>
-                <Image src='/etherscanIcon.webp' width={60} height={60} alt='etherscan'/>
-                <Image src='/CoinMarketIcon.webp' width={60} height={60} alt='coinmarket'/>
-                <Image src='/Pancake SwapIcon.webp' width={60} height={60} alt='Pancake Swap'/>
+                <Link href="https://twitter.com/pride_token" className='ml-2'>
+                  <Image src='/twitterIcon.webp' width={60} height={60} alt='twitter'/>
+                </Link>
+                <Link href="https://t.me/pride_token" className='ml-2'>
+                  <Image src='/telegramIcon.webp' width={60} height={60} alt='telegram'/>
+                </Link>
+
+                <Link href="https://www.dextools.io/app/en/bnb/pair-explorer/0xecb9ebe5002286e80e6d5442ca4502ff280dd7ed" className='ml-2'>
+                  <Image src='/dexTool.webp' width={60} height={60} alt='dexTool'/>
+                </Link>
+                <Link href="https://etherscan.io/dex/uniswapv2/0x547224f501a40ccf98c81d98f8dd19cb95f83e2e" className='ml-2'>
+                  <Image src='/bscscanIcon.png' width={60} height={60} alt='etherscan'/>
+                </Link>
+                <Link href="https://app.uniswap.org/#/swap?outputCurrency=0x547224f501a40ccf98c81d98f8dd19cb95f83e2e" className='ml-2'>
+                  <Image src='/pancakeSwap.png' width={60} height={60} alt='uniswap'/>
+                </Link>
               </div>
             </div>
           </div>
@@ -119,6 +132,67 @@ export default function Home() {
 {/*     <div className="bg-[url('/highPRIDE.png')] bg-no-repeat hidden md:flex bg-contain absolute md:-right-10 top-24 -right-28 w-1/2 h-screen"></div>
 */}
   </section>
+    <section className="bg-purple-600 relative min-h-screen w-screen flex flex-col items-center justify-center" id="roadmap">
+    <div className='text-center w-screen bg-purple-600'>
+      <div className='text-center w-full flex flex-col justify-center items-center'>
+        <h1 className='font-aboreto text-yellow-500 p-2 text-4xl font-bold'>OUR ROADMAP</h1>
+        <p className='font-play-fair text-lg'>Here's a suggested roadmap for the $Pride Token project:</p>
+        <div className='grid grid-cols-2 sm:grid-cols-1 px-12 lg:grid-cols-3 gap-6 w-full'>
+          <div className='flex flex-col justify-center items-center'>
+            <IoIosPeople color="white" style={{ width: 100, height: 100 }} />
+            <h4>Phase 1</h4>
+            <ul className='text-left'>
+              <li>Establish the core team and community</li>
+              <li>Solidify tokenomics and smart contract development</li>
+              <li>Conduct a fair and transparent token launch on the Binance Smart Chain (BSC)</li>
+              <li>List $Pride Token on decentralized exchanges (DEX) for trading and liquidity</li>                    
+            </ul>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+            <IoIosWifi color="white" style={{ width: 100, height: 100 }} />
+            <h4>Phase 2</h4>
+            <ul className='text-left'>
+              <li>Collaborate with influencers, LGBTQ+ advocates, and organizations to raise awareness</li>
+              <li>Expand the $Pride Token community through targeted marketing and outreach campaigns</li>
+              <li>Regularly engage with the community through social media, AMA sessions, and events</li>
+              <li>Implement referral and reward programs to incentivize community participation</li>
+            </ul>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+            <IoIosCar color="white" style={{ width: 100, height: 100 }} />
+            <h4>Phase 3</h4>
+            <ul className='text-left'>
+              <li>Forge strategic partnerships with LGBTQ+ organizations, charities, and initiatives</li>
+              <li>Develop real-world use cases for $Pride Token, such as funding LGBTQ+ programs and events</li>
+              <li>Explore collaborations with LGBTQ+ artists, creators, and businesses for mutual growth</li>
+              <li>Enhance utility by integrating $Pride Token into payment systems and merchant adoption</li>
+            </ul>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+            <MdRoomService color="white" style={{ width: 100, height: 100 }} />
+            <h4>Phase 4</h4>
+            <ul className='text-left'>
+              <li>Build a robust and user-friendly pride dApp for fundraising, merchandise sales, and donations</li>
+              <li>Continuously improve the dApp based on user feedback and community needs</li>
+              <li>Expand the dApp's features to include additional functionality and integration with external platforms</li>
+              <li>Explore partnerships with existing crypto platforms for increased accessibility and usability</li>
+            </ul>
+          </div>
+          <div className='flex flex-col justify-center items-center'>
+            <CgScreen color="white" style={{ width: 100, height: 100 }} />
+            <h4>Phase 5</h4>
+            <ul className='text-left'>
+              <li>Expand the reach of $Pride Token to global LGBTQ+ communities and emerging markets</li>
+              <li>Actively support LGBTQ+ rights advocacy and initiatives worldwide</li>
+              <li>Foster collaborations with regulatory bodies to ensure compliance and transparency</li>
+              <li>Establish $Pride Token as a recognized symbol of support for LGBTQ+ rights and inclusivity</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
       <div className="bg-purple-600 w-screen min-h-screen flex flex-col items-center justify-center">
 
       <section className="bg-purple-600 relative min-h-screen w-screen flex flex-col items-center justify-center" id="why-buy">
