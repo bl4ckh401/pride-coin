@@ -12,7 +12,7 @@ function Header() {
     return (
         <div className='main_nav bg-purple-600 w-screen'>
             <div className='PRIDELogo bg-purple-600'>
-                <Image src='/LGBTQ.png' className='img_logo' alt='mocha logo' width={200} height={200} />
+                <Image src='/LGBTQ.png' className='img_logo hidden md:flex' alt='mocha logo' width={200} height={200} />
             </div>
             <hr style={{
                 width: "100%",
@@ -31,9 +31,7 @@ function Header() {
                 </div>
 
             </div>
-            <div className="mobile-menu bg-purple-600">
-                    <AiOutlineClose className="menu-icon" />
-            </div>
+        
         </div>
     );
 }

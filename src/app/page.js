@@ -7,6 +7,7 @@ import {TbDog} from 'react-icons/tb'
 import { IoIosCar, IoIosPeople, IoIosWifi } from 'react-icons/io'
 import { MdRoomService } from 'react-icons/md'
 import { CgScreen } from 'react-icons/cg'
+import Head from 'next/head';
 
 export default function Home() {
 
@@ -15,18 +16,28 @@ export default function Home() {
 
       title:'Pancake Swap',
       icon:'',
-      path:'',
+      path:'https://pancakeswap.finance/swap?outputCurrency=0x1066D6d936C9DE443707C3113107e6E23a3c3ee8',
     },
   ]
 
   return (
     <main className="flex min-h-screen flex-col items-center bg-purple-600 overflow-hidden justify-between">
+      <Head>
+          <meta charSet="UTF-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta name="description" content="PRIDE is a meme coin powered by the community." />
+          <meta name="keywords" content="PRIDE, meme coin, cryptocurrency, community-powered" />
+          <meta name="author" content="PRIDE" />
+          <link rel="icon" href="/LGBTQ.png" />
+          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,900,500,700&display=swap" />
+          <title>Pride🌈✨</title>
+        </Head>
       <Header/>
       <section className="bg-purple-600 w-screen relative md:py-16 flex flex-col justify-center items-center" id="home">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 max-w-screen-lg">
           <div className="w-full md:w-1/2 md:min-h-screen min-h-screen flex justify-center items-center flex-col mb-10 md:mb-0">
             <h2 className="text-4xl font-bold mb-4">Welcome to the Fabulous World of $Pride Token! 🌈✨</h2>
-            <p className="text-gray-700 leading-relaxed">Step into a realm where empowerment, fabulousness, and financial freedom intersect. $Pride Token is here to celebrate the LGBTQ+ community and ignite the rainbow revolution! Are you ready to join the most fabulous movement in the crypto sphere? Let's dive in!</p>
+            <p className="text-gray-300 leading-relaxed">Step into a realm where empowerment, fabulousness, and financial freedom intersect. $Pride Token is here to celebrate the LGBTQ+ community and ignite the rainbow revolution! Are you ready to join the most fabulous movement in the crypto sphere? Let's dive in!</p>
                     
             <div className="mt-8">
               <div className="flex flex-wrap items-center justify-center md:justify-start">
@@ -36,18 +47,24 @@ export default function Home() {
                 <Link href="https://t.me/pride_token" className='ml-2'>
                   <Image src='/telegramIcon.webp' width={60} height={60} alt='telegram'/>
                 </Link>
-
+                <Link href="https://www.tiktok.com/@pridetoken2" className='ml-2'>
+                  <Image src='/tiktok.png' width={60} height={60} alt='uniswap'/>
+                </Link>
+                <Link href="https://youtube.com/@Pridetoken" className='ml-2'>
+                  <Image src='/ytlogo.png' width={60} height={60} alt='uniswap'/>
+                </Link>
                 <Link href="https://www.dextools.io/app/en/bnb/pair-explorer/0xecb9ebe5002286e80e6d5442ca4502ff280dd7ed" className='ml-2'>
                   <Image src='/dexTool.webp' width={60} height={60} alt='dexTool'/>
                 </Link>
-                <Link href="https://etherscan.io/dex/uniswapv2/0x547224f501a40ccf98c81d98f8dd19cb95f83e2e" className='ml-2'>
+                <Link href="https://bscscan.com/token/0x1066d6d936c9de443707c3113107e6e23a3c3ee8" className='ml-2'>
                   <Image src='/bscscanIcon.png' width={60} height={60} alt='etherscan'/>
                 </Link>
-                <Link href="https://app.uniswap.org/#/swap?outputCurrency=0x547224f501a40ccf98c81d98f8dd19cb95f83e2e" className='ml-2'>
+                <Link href="https://pancakeswap.finance/swap?outputCurrency=0x1066D6d936C9DE443707C3113107e6E23a3c3ee8" className='ml-2'>
                   <Image src='/pancakeSwap.png' width={60} height={60} alt='uniswap'/>
                 </Link>
               </div>
             </div>
+            <h1 className='text-xl mb-8 text-center'>0x1066D6d936C9DE443707C3113107e6E23a3c3ee8</h1>
           </div>
           <div className="bg-[url('/equaltyposter.png')] bg-no-repeat hidden md:flex lg:flex bg-contain absolute left-2/4 top-12 w-3/4 h-screen"/>
         </div>
@@ -55,7 +72,7 @@ export default function Home() {
           {Exchanges.map((item, index) => {
             return (
               <div className='w-full sm:w-1/3 p-2' key={index}>
-                <Link href='Pancake Swap'>
+                <Link href={item.path}>
                   <div className='border border-white rounded-full p-4'>
                     <h2 className='text-center'>{item.title}</h2>
                   </div>
@@ -66,16 +83,15 @@ export default function Home() {
         </div>
       </section>      
       <section className="bg-purple-600 py-16 min-h-screen w-screen relative justify-between flex-col items-center flex" id="about">
-        <div className="bg-[url('/Prideposter.png')] bg-no-repeat hidden md:flex bg-contain absolute md:-left-32 lg:-left-32 top-24 w-3/4 h-screen"/>
+        <div className="bg-[url('/love.png')] bg-no-repeat hidden md:flex bg-contain absolute md:-left-32 lg:-left-32 top-24 w-3/4 h-screen"/>
 
         <div className="container w-screen mx-auto flex flex-col min-h-screen md:pl-80 lg:pl-3/4 z-10 md:flex-col items-center justify-between px-6 max-w-screen-lg">
           <h2 className="text-4xl font-bold mb-8 text-center">About $PRIDE</h2>
-          <p className="text-gray-700 leading-relaxed mb-8">By investing in $Pride Token, you're embracing the power of financial empowerment. Let's break the chains of inequality and pave the way for a future where our community thrives in all its glorious colors.</p>
+          <p className="text-gray-300 leading-relaxed mb-8">By investing in $Pride Token, you're embracing the power of financial empowerment. Let's break the chains of inequality and pave the way for a future where our community thrives in all its glorious colors.</p>
           <div className="flex flex-wrap justify-center">
             <div className="w-full md:w-full p-4 text-center">
-              <FaPaw size={48} color="white"/>
               <h3 className="text-xl font-bold mb-4">Our Mission</h3>
-              <p className="text-gray-700 leading-relaxed">Our mission is to empower individuals within the LGBTQ+ community through financial empowerment. We firmly believe in breaking the chains of inequality and creating a future where every member of our community thrives in all their glorious colors. By investing in $Pride Token, you become a catalyst for change and join us on this empowering journey.</p>
+              <p className="text-gray-300 leading-relaxed">Our mission is to empower individuals within the LGBTQ+ community through financial empowerment. We firmly believe in breaking the chains of inequality and creating a future where every member of our community thrives in all their glorious colors. By investing in $Pride Token, you become a catalyst for change and join us on this empowering journey.</p>
             </div>
           </div>
         </div>
@@ -87,22 +103,22 @@ export default function Home() {
         <div className="w-full md:w-1/2 p-4">
           <FaWallet size={48} color="white"/>
           <h3 className="text-xl font-bold mb-4">Step 1: Get a Wallet</h3>
-          <p className="text-gray-900 leading-relaxed">Before you can buy Pride, you will need to have a cryptocurrency wallet that supports Binance Smart Chain. There are many different wallets available, so do your research and choose one that is right for you.</p>
+          <p className="text-gray-300 leading-relaxed">Before you can buy Pride, you will need to have a cryptocurrency wallet that supports Binance Smart Chain. There are many different wallets available, so do your research and choose one that is right for you.</p>
         </div>
         <div className="w-full md:w-1/2 p-4">
           <FaEthereum size={48} color="white"/>
           <h3 className="text-xl font-bold mb-4">Step 2: Buy BNB</h3>
-          <p className="text-gray-900 leading-relaxed">In order to buy $PRIDE, you will need to first buy (BNB) from a cryptocurrency exchange. There are many exchanges to choose from, including Coinbase, Binance, and Kraken.</p>
+          <p className="text-gray-300 leading-relaxed">In order to buy $PRIDE, you will need to first buy (BNB) from a cryptocurrency exchange. There are many exchanges to choose from, including Coinbase, Binance, and Kraken.</p>
         </div>
         <div className="w-full md:w-1/2 p-4">
           <SiHiveBlockchain size={48} color="white"/>
           <h3 className="text-xl font-bold mb-4">Step 3: Exchange BNB for PRIDE</h3>
-          <p className="text-gray-900 leading-relaxed">Once you have BNB in your wallet, you can exchange it for PRIDE Coin on a decentralized exchange (DEX) such as Pancake Swap. Simply connect your wallet to the DEX and place a buy order for PRIDE Coin.</p>
+          <p className="text-gray-300 leading-relaxed">Once you have BNB in your wallet, you can exchange it for PRIDE Coin on a decentralized exchange (DEX) such as Pancake Swap. Simply connect your wallet to the DEX and place a buy order for PRIDE Coin.</p>
         </div>
         <div className="w-full md:w-1/2 p-4">
           <FaHandHoldingUsd size={48} color="white"/>
           <h3 className="text-xl font-bold mb-4">Step 4: Hold or Trade PRIDE Coin</h3>
-          <p className="text-gray-900 leading-relaxed">Once you have PRIDE Coin in your wallet, you can choose to hold it for the long-term or trade it for other cryptocurrencies or fiat currencies. Remember that cryptocurrency prices can be volatile, so always do your own research and invest responsibly.</p>
+          <p className="text-gray-300 leading-relaxed">Once you have PRIDE Coin in your wallet, you can choose to hold it for the long-term or trade it for other cryptocurrencies or fiat currencies. Remember that cryptocurrency prices can be volatile, so always do your own research and invest responsibly.</p>
         </div>
         </div>
         </div>
@@ -110,7 +126,7 @@ export default function Home() {
     <section className="bg-purple-600 relative min-h-screen py-16 w-screen flex flex-col items-center justify-center" id="why-buy">
     <div className="container flex-wrap justify-center mx-auto w-screen px-6">
       <h2 className="text-4xl font-bold mb-8 text-gray-100 text-center">Why Buy $PRIDE</h2>
-      <h2 className="text-3xl font-bold mb-6 text-purple-900">💎 Sparkling Empowerment</h2>
+      <h2 className="text-3xl font-bold mb-6 text-purple-300">💎 Sparkling Empowerment</h2>
         <p className="text-lg mb-6">By investing in $Pride Token, you're embracing the power of financial empowerment. Let's break the chains of inequality and pave the way for a future where our community thrives in all its glorious colors.</p>
 
         <h2 className="text-3xl font-bold mb-6 text-purple-900">✨ Unleash Your Inner Superstar</h2>
@@ -210,7 +226,9 @@ export default function Home() {
         <p className="text-lg mb-6 px-6">Ready to unleash your inner diva? Invest in $Pride Token and be part of the most fabulous revolution the crypto world has ever seen. Let's celebrate love, diversity, and financial freedom like never before!</p>
 
         <div className="flex items-center container flex-wrap justify-center mx-auto w-screen px-6">
-          <button className="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg">Invest Now</button>
+          <Link href='https://pancakeswap.finance/swap?outputCurrency=0x1066D6d936C9DE443707C3113107e6E23a3c3ee8'>
+            <button className="bg-purple-500 hover:bg-purple-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg">Invest Now</button>
+          </Link>
         </div>
       </section>
     </div>
