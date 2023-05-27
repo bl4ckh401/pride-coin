@@ -20,7 +20,7 @@ export default function Home() {
   ]
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center bg-purple-600 overflow-hidden justify-between">
       <Header/>
       <section className="bg-purple-600 w-screen relative md:py-16 flex flex-col justify-center items-center" id="home">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 max-w-screen-lg">
@@ -49,7 +49,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="bg-[url('/equaltyposter.png')] bg-no-repeat bg-contain absolute left-2/4 top-12 w-3/4 h-screen"/>
+          <div className="bg-[url('/equaltyposter.png')] bg-no-repeat hidden md:flex lg:flex bg-contain absolute left-2/4 top-12 w-3/4 h-screen"/>
         </div>
         <div className='flex flex-wrap justify-center w-full px-6 md:px-24'>
           {Exchanges.map((item, index) => {
@@ -135,9 +135,9 @@ export default function Home() {
     <section className="bg-purple-600 relative min-h-screen w-screen flex flex-col items-center justify-center" id="roadmap">
     <div className='text-center w-screen bg-purple-600'>
       <div className='text-center w-full flex flex-col justify-center items-center'>
-        <h1 className='font-aboreto text-yellow-500 p-2 text-4xl font-bold'>OUR ROADMAP</h1>
+        <h1 className='font-aboreto text-purple-900 p-2 text-4xl font-bold'>OUR ROADMAP</h1>
         <p className='font-play-fair text-lg'>Here's a suggested roadmap for the $Pride Token project:</p>
-        <div className='grid grid-cols-2 sm:grid-cols-1 px-12 lg:grid-cols-3 gap-6 w-full'>
+        <div className='grid grid-cols-1 md:grid-cols-2 px-12 lg:grid-cols-3 gap-6 w-full'>
           <div className='flex flex-col justify-center items-center'>
             <IoIosPeople color="white" style={{ width: 100, height: 100 }} />
             <h4>Phase 1</h4>
