@@ -64,7 +64,7 @@ export default function Home() {
                 </Link>
               </div>
             </div>
-            <h1 className='text-xl mb-8 mt-4 px-6 text-center'>0x1066D6d936C9DE443707C3113107e6E23a3c3ee8</h1>
+            <h1 className='text-xl text-gray-200 mb-8 mt-4 px-6 text-center'>0x1066D6d936C9DE443707C3113107e6E23a3c3ee8</h1>
           </div>
           <div className="bg-[url('/equaltyposter.png')] bg-no-repeat hidden md:flex lg:flex bg-contain absolute left-2/4 top-12 w-3/4 h-screen"/>
         </div>
